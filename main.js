@@ -25,3 +25,18 @@ if (steve) {
 //     shopBag.style.
 
 // })
+
+// ============== Login.html ==========================
+var form = document.getElementById('form')
+var login = document.getElementById('form')
+var username = document.getElementById('username')
+var password = document.getElementById('password')
+var loginBtn = document.getElementById('loginBtn')
+
+loginBtn.addEventListener('click', () => {
+    if (username.value == 'admin' && password.value == 'admin') {
+        window.location.href = "./index.html"
+    } else {
+        alert('Invalid username or password')
+    }
+})
